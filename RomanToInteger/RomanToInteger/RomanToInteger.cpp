@@ -7,6 +7,8 @@ int RomanToInteger::ToInteger(string roman)
 	{
 		if (roman[index] == 'I')
 			num++;
+		else if (roman[index] == 'V')
+			num = num + 5;
 		index++;
 	}
 		return num;
@@ -14,11 +16,11 @@ int RomanToInteger::ToInteger(string roman)
 #ifdef TEST
 void main()
 {
-	string roman ="I";
-	cout<<"To convert roman "<<roman<<" to integer: "<<RomanToInteger::ToInteger(roman)<<endl;
-	roman ="II";
+	string roman = "III";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
-	roman = "III";
+	roman = "V";
+	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
+	roman = "VIII";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
 }
 #endif
