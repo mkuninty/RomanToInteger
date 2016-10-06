@@ -1,4 +1,18 @@
 #include"RomanToInteger.h"
+/////////////////////////////////////////////////////////////////////////////
+// RomanToInteger.cpp - To define function to convert integer to roman     //
+//																		   //
+// ver 1.0                                                                 //
+// ----------------------------------------------------------------------- //
+// copyright © Medha Reddy Kuninty, 2016                                   //
+// All rights granted provided that this notice is retained                //
+// ----------------------------------------------------------------------- //
+// Language:    Visual C++, Visual Studio 2015                             //
+// Platform:    ASUS SonicMaster, Core i3, Windows 10                      //		                                       
+// Author:      Medha Reddy Kuninty,Syracuse         					   //
+//              (717)-891-7128, mkuninty@syr.edu                           //
+/////////////////////////////////////////////////////////////////////////////
+
 int RomanToInteger::ToInteger(string roman)
 {
 	int index = 0;
