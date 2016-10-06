@@ -3,12 +3,10 @@ int main()
 {
 	string roman = "I";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
-	roman = "II";
-	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
-	roman = "III";
-	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
 	roman = "V";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
-	roman = "VIII";
+	roman = "IX";
+	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
+	roman = "IV";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
 }
