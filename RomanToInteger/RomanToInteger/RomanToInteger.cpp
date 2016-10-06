@@ -7,6 +7,10 @@ int RomanToInteger::ToInteger(string roman)
 	store['I'] = 1;
 	store['V'] = 5;
 	store['X'] = 10;
+	store['L'] = 50;
+	store['C'] = 100;
+	store['D'] = 500;
+	store['M'] = 1000;
 	while (index < roman.length())
 	{
 		if (store[roman[index]] < store[roman[index + 1]])
@@ -29,6 +33,12 @@ void main()
 	roman = "V";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
 	roman = "IX";
+	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
+	roman = "CDLIX";
+	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
+	roman = "MDXXX";
+	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
+	roman = "CXXXVII";
 	cout << "To convert roman " << roman << " to integer: " << RomanToInteger::ToInteger(roman) << endl;
 }
 #endif
